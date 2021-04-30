@@ -31,7 +31,7 @@ void USARTInit(uint16_t ubrr_val)
  *
  *@param data 
  */
-void USARTWriteChar(uint8_t data)
+void USARTWriteData(uint8_t data)
 {
     while(!(UCSR0A & (1<<UDRE0)))
     {

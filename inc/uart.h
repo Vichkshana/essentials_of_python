@@ -11,8 +11,9 @@
 #ifndef UART_H_INCLUDED
 #define UART_H_INCLUDED
 
+#define baudrate (103)
 void USARTInit(uint16_t);
-void USARTWriteChar(uint8_t);
+void USARTWriteData(uint8_t);
 
 
 #endif // UART_H_INCLUDED

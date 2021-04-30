@@ -35,22 +35,22 @@ void out_pwm(uint16_t temp)
     if(temp>=0 && temp<=200)
     {
         OCR1A=205;          //20% duty cycle
-        USARTWriteChar(20);
+        USARTWriteData(20);
     }
     if(temp>=201 && temp<=500)
     {
         OCR1A=410;          //40% duty cycle
-        USARTWriteChar(25);
+        USARTWriteData(25);
     }
     if(temp>=501 && temp<=700)
     {
         OCR1A=717;          //70% duty cycle
-        USARTWriteChar(29);
+        USARTWriteData(29);
     }
     if(temp>=701 && temp<=1024)
     {
         OCR1A=973;          //95% duty cycle
-        USARTWriteChar(33);
+        USARTWriteData(33);
     }
 
 }
