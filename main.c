@@ -26,7 +26,7 @@ int main(void)
     peripheral_init();
     InitADC();
     InitPwm();
-    USARTInit(103);
+    USARTInit(baudrate);
     uint16_t temp;
     while(1)
     {
